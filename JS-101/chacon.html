@@ -1,5 +1,6 @@
 <script type="text/javascript">
-/*programa que calcula el total a pagar por un tipo de producto
+/*
+programa que calcula el total a pagar por un tipo de producto
 -pregunta el precio.
 -la cantidad de artículos.
 -calcula el subtotal.
@@ -22,21 +23,25 @@ var tax;
 var total;
 
 price = prompt('Type the price of the product');
-quantity = prompt('How many products did you buy?');
+quantity = prompt('How many products did you buy?')
+
 
 //Convertir a números
-price = Number(price);
-quantity = Number(quantity);
+if (price != Number || quantity != Number) {
+  console.error('Please enter a valid number')
+}
+else {
+  price = Number(price);
+  quantity = Number(quantity);
 
-subtotal = price * quantity;
-tax = subtotal * .16;
-total = subtotal + tax;
-
-//Salidas
-
-console.log('Thanks for your purchase.');
-console.log('Subtotal: $', subtotal);
-console.log('Tax: $', tax);
-console.log('Total: $', total);
+  subtotal = price * quantity;
+  tax = subtotal * .16;
+  total = subtotal + tax;
+  //Salidas
+  console.log('Thanks for your purchase.');
+  console.log('Subtotal: $', subtotal);
+  console.log('Tax: $', tax);
+  console.log('Total: $', total);
+}
 
 </script>
