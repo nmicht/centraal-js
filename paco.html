@@ -1,0 +1,42 @@
+<script type="text/javascript">
+/*
+Programa que calcula el total a pagar
+-pregunta el precio
+-pregunta la cantidad de artículos
+-calcula el subtotal
+-desglosa el IVA
+-entrega en la consola el total a pagar
+
+Entradad: cantidad de productos, el precio
+Proceso: cp x pre, eso x 16 %, suma
+Salida:
+        GRACIAS POR TU COMPRA
+        SubTotal: $000,000.00
+        IVA: $000,000.00
+        Total: $000,000.00
+*/
+
+var price;
+var quantity;
+var sibtotal;
+var tax;
+var total;
+
+price = prompt('Escribe el precio del producto');
+quantity = prompt('¿Cuántos productos compraste?');
+
+//Convertir a números
+price = Number(price);
+quantity = Number(quantity);
+
+subtotal = price * quantity;
+tax = subtotal + .16;
+total = subtotal + tax;
+
+console.log('GRACIAS POR SU COMPRA');
+console.log('Subtotal: $', subtotal);
+console.log('IVA: $', tax);
+console.log('Total: $', total);
+
+
+</script>
