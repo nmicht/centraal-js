@@ -24,11 +24,14 @@ var total;
 
 do {
   price = prompt('Type the price of the product');
+  if (isNaN(price))
+    console.error(price, 'is not a valid price')
 } while (isNaN(price));
-
 
 do {
   quantity = prompt('How many products did you buy?');
+  if (isNaN(quantity))
+    console.error(quantity, 'is not a valid quantity');
 } while (isNaN(quantity));
 
 //Convertir a números
