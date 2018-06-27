@@ -5,17 +5,23 @@ var subtotal;
 var tax;
 var total;
 
-price = prompt('Escribe el precio de tu producto');
+do{
+  price = prompt('Escribe el precio de tu producto');
+}
+    while
+    (isNaN(price));
+
+do{
 quantity = prompt('Cuantos productos compraste?');
+}
+  while
+    (isNaN(quantity));
 
 
 price = Number(price);
 quantity = Number(quantity);
 
-while (isNaN(price) || isNaN(quantity)){
-  console.log('Esto no es un numero');
-}
-  else {
+
     subtotal = price * quantity;
     tax = subtotal * .16;
     total = subtotal + tax;
@@ -24,5 +30,4 @@ while (isNaN(price) || isNaN(quantity)){
     console.log('El subtotal es: $', subtotal);
     console.log('IVA: $', tax);
     console.log('Total: $', total);
-    }
 </script>
