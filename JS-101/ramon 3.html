@@ -4,8 +4,21 @@
     Serie del uno al diez en consola
 
     */
+var numero;
 
-    for(counter = 1; counter <= 10; counter = counter + 1){
+do { 
+    
+    numero = prompt('Escribe un numero');
+    
+    if (isNaN(numero)) {   
+        console.error('El valor', numero, 'no es valido');
+    }
+
+} while (isNaN(numero))
+
+
+
+    for(var counter = 1; counter <= numero; counter++){
                 console.log(counter)
 
             }
