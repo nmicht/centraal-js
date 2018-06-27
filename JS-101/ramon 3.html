@@ -8,13 +8,13 @@ var numero;
 
 do { 
     
-    numero = prompt('Escribe un numero');
+    numero = prompt('Escribe un numero mayor a 1');
     
-    if (isNaN(numero)) {   
+    if (isNaN(numero) || numero <= 1) {   
         console.error('El valor', numero, 'no es valido');
     }
 
-} while (isNaN(numero))
+} while (isNaN(numero) || numero <= 1)
 
 
 
