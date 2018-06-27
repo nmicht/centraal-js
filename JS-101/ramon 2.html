@@ -24,14 +24,22 @@ var subtotal;
 var tax;
 var total;
 
-do {
+
+do { 
+    
     price = prompt('Escribe el precio del producto');
-    console.error('Datos no validos');
+    
+    if (isNaN(price)) {   
+        console.error('El valor', price, 'no es un precio valido');
+    }
+
 } while (isNaN(price))
 
 do {
     quantity = prompt('¿Cuántos productos compraste?');
-    console.error('Datos no validos');
+    if (isNaN(quantity)) {
+        console.error('El valor', quantity, 'no es un precio valido');
+    }
 } while (isNaN(quantity))
 
 //Convertir a numero
