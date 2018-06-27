@@ -1,0 +1,28 @@
+<script>
+var price;
+var quantity;
+var subtotal;
+var tax;
+var total;
+
+price = prompt('Escribe el precio de tu producto');
+quantity = prompt('Cuantos productos compraste?');
+
+
+price = Number(price);
+quantity = Number(quantity);
+
+while (isNaN(price) || isNaN(quantity)){
+  console.log('Esto no es un numero');
+}
+  else {
+    subtotal = price * quantity;
+    tax = subtotal * .16;
+    total = subtotal + tax;
+
+    console.log('Gracias por tu compra');
+    console.log('El subtotal es: $', subtotal);
+    console.log('IVA: $', tax);
+    console.log('Total: $', total);
+    }
+</script>
