@@ -22,25 +22,25 @@ var subtotal;
 var tax;
 var total;
 
-price = prompt('Escribe el precio del producto');
-quantity = prompt('Cuántos productos compraste?');
+do {
+    price = prompt('Escribe el precio del producto');
+} while (isNaN(price));
+
+do {
+    quantity = prompt('Cuántos productos compraste?');
+} while (isNaN(quantity));
 
 //Convertir a numeros
 price = Number(price);
 quantity = Number(quantity);
 
-if (isNaN(price) || isNaN(quantity)) {
-    console.error('Datos no validos');
-}
-else {
-    subtotal = price * quantity;
-    tax = subtotal * .16;
-    total = subtotal + tax;
+subtotal = price * quantity;
+tax = subtotal * .16;
+total = subtotal + tax;
 
-    console.log('GRACIAS POR TU COMPRA');
-    console.log('Subtotal: $', subtotal);
-    console.log('IVA: $', tax);
-    console.log('Total: $', total);
-}
+console.log('GRACIAS POR TU COMPRA');
+console.log('Subtotal: $', subtotal);
+console.log('IVA: $', tax);
+console.log('Total: $', total);
 
 </script>
