@@ -21,11 +21,12 @@ var quantity;
 var subtotal;
 var tax;
 var total;
+var stupid = 0;
 
 do {
   price = prompt('Escribe el precio del producto');
-
   if (isNaN(price)){
+    stupid++;
     console.error('El valor', price, 'no es un precio válido');
   }
 
@@ -33,7 +34,13 @@ do {
 
 do {
   quantity = prompt('¿Cuántos productos compraste?');
+  if (isNaN(quantity)){
+    stupid++;
+    console.error('El valor', quantity, 'no es un precio válido');
+  }
 } while (isNaN(quantity));
+
+console.warn('Tu nivel de stupidez es', stupid);
 
 //Convertir a números
 
