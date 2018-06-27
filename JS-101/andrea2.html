@@ -37,13 +37,19 @@ if(isNaN(price) || isNaN(quantity)) {
 
 do {
     price = prompt('Escribe el precio del producto');
-}
-while (isNaN(price));
+    if (isNaN(price)) {
+        console.error('Your ', price, ' is not valid. Please enter valid number');
+    }
+} while (isNaN(price));
+
 
 do {
     quantity = prompt('Cuántos productos compraste?');
-}
-while (isNaN(quantity));
+    if (isNaN(quantity)) {
+    console.error('Your ', quantity, ' is not valid. Please enter valid number');
+    }
+} while (isNaN(quantity));
+
 
 subtotal = price * quantity;
 tax = subtotal * .16;
