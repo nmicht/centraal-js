@@ -23,6 +23,8 @@ var quantity;
 var subtotal;
 var tax;
 var total;
+var x=0;
+
 
 
 do { 
@@ -31,6 +33,7 @@ do {
     
     if (isNaN(price)) {   
         console.error('El valor', price, 'no es un precio valido');
+        console.warn('Intento numero',++x,);
     }
 
 } while (isNaN(price))
@@ -39,6 +42,7 @@ do {
     quantity = prompt('¿Cuántos productos compraste?');
     if (isNaN(quantity)) {
         console.error('El valor', quantity, 'no es una cantidad valida');
+        console.warn('Intento numero',++x,);
     }
 } while (isNaN(quantity))
 
