@@ -8,7 +8,7 @@
     - entrega en la consola el total a pagar
     
     Entradas: precio, cantidad de productos,
-    Proceso: cp x precio, esp x 16%, suma
+    Proceso: cantprod x precio, esp x 16%, suma
     Salida: 
         GRACIAS POR TU COMPRA
         subtotal: $000,000.00
@@ -29,6 +29,11 @@ quantity = prompt('Cuántos productos compraste?');
 price = Number(price);
 quantity = Number(quantity);
 
+if(isNaN(price) || isNaN(quantity)) {
+    console.error('Please enter valid number');
+}
+
+else {
 subtotal = price * quantity;
 tax = subtotal * .16;
 total = subtotal + tax;
@@ -37,6 +42,6 @@ console.log('GRACIAS POR TU COMPRA');
 console.log('subtotal; $', subtotal);
 console.log('iva: $', tax);
 console.log('total: $', total);
-
+}
 
 </script>
