@@ -29,18 +29,27 @@ quantity = prompt('¿Cuántos productos compraste?');
 
 //Convertir a numero
 
+
+
+
 price = Number(price);
 quantity = Number(quantity);
 
-subtotal = price * quantity;
-tax = subtotal * 0.16;
-total = subtotal + tax;
+if (isNaN(price) || isNaN(quantity)) {
+    console.error('Datos no validos');
+}
+else {
+
+    subtotal = price * quantity;
+    tax = subtotal * 0.16;
+    total = subtotal + tax;
 
 
-console.log('GRACIAS POR TU COMPRA');
-console.log('Subtotal: $', subtotal);
-console.log('IVA: $', tax);
-console.log('Total: $', total);
+    console.log('GRACIAS POR TU COMPRA');
+    console.log('Subtotal: $', subtotal);
+    console.log('IVA: $', tax);
+    console.log('Total: $', total);
 
+}
 
 </script>
