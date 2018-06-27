@@ -21,17 +21,27 @@ var quantity;
 var subtotal;
 var tax;
 var total;
+var error = 0;
 
 do {
   price = prompt('Type the price of the product');
+  if (isNaN(price)) {
+    console.error(price, 'is not a valid price');
+    error = error + 1;
+  }
 } while (isNaN(price));
-
 
 do {
   quantity = prompt('How many products did you buy?');
+  if (isNaN(quantity)) {
+    console.error(quantity, 'is not a valid quantity');
+    error = error + 1;
+  }
 } while (isNaN(quantity));
 
+
 //Convertir a números
+
 price = Number(price);
 quantity = Number(quantity);
 
@@ -39,6 +49,7 @@ subtotal = price * quantity;
 tax = subtotal * .16;
 total = subtotal + tax;
 //Salidas
+console.warn('Failed attempts', error);
 console.log('Thanks for your purchase.');
 console.log('Subtotal: $', subtotal);
 console.log('Tax: $', tax);
