@@ -29,7 +29,7 @@ quantity = prompt('How many products did you buy?')
 price = Number(price);
 quantity = Number(quantity);
 
-if (true == isNaN(price) || true == isNaN(quantity)) {
+if (isNaN(price) || isNaN(quantity)) {
   console.error('Please enter a valid number')
 }
 else {
