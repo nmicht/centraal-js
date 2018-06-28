@@ -16,11 +16,11 @@
         total: $000,000.00
     */
 
-    var price;
-    var quantity;
-    var subtotal;
-    var tax;
-    var total;
+var price;
+var quantity;
+var subtotal;
+var tax;
+var total;
 
 price = prompt('Escribe el precio del producto');
 quantity = prompt('Cuántos productos compraste?');
@@ -32,7 +32,6 @@ quantity = Number(quantity);
 if(isNaN(price) || isNaN(quantity)) {
     console.error('Please enter valid number');
 }
-
 else {
 subtotal = price * quantity;
 tax = subtotal * .16;
