@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button type="button" onclick="greetings(prompt('nombre'));">Saluda</button>
+    <button type="button" onclick="bye(prompt('nombre'));">Despídete</button>
+
+    <script type="text/javascript">
+      function greetings(nombre) {
+        console.log('Hola ', nombre)
+      }
+      function bye(fulanito) {
+        console.log('Adios ', fulanito)
+        }
+
+      var nombre = prompt('DIme tu nombre');
+
+      greetings(nombre);
+
+    </script>
+  </body>
+</html>
