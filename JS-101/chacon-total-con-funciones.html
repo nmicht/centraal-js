@@ -18,9 +18,7 @@ Salida:
 
 var price;
 var quantity;
-var subtotal;
-var tax;
-var total;
+var surcharges
 var error = 0;
 
 do {
@@ -39,32 +37,35 @@ do {
   }
 } while (isNaN(quantity));
 
-//Convertir a números
-price = Number(price);
-quantity = Number(quantity);
-
-calculate()
-//Salidas
+surcharges = calcSurcharges(price, quantity);
 console.warn('Failed attempts', error);
-printTicket(subtotal, tax, total);
+printTicket(surcharges.subtotal, surcharges.tax, surcharges.total);
 
-
-function calculate() {
-  subtotal = price * quantity;
-  tax = subtotal * .16;
-  total = subtotal + tax;
-}
-
-function printTicket() {
+function printTicket(subtotal, tax, total) {
   console.log('Thanks for your purchase.');
   console.log('Subtotal: $', subtotal);
   console.log('Tax: $', tax);
   console.log('Total: $', total);
 }
 
+function calcSurcharges(price, quantity) {
+  var subtotal;
+  var tax ;
+  var total;
 
-/*
-Function that calculates the subtotal, tax and Total
-Using the price of a product and the quantity of the product
- */
+  price = Number(price);
+  quantity = Number(quantity);
+
+  subtotal = price * quantity;
+  tax = subtotal * .16;
+  total = subtotal + tax;
+
+  return {
+    subtotal,
+    tax,
+    total
+  };
+}
+
+
 </script>
