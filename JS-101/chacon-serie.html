@@ -6,9 +6,9 @@ var counter;
 var chosen
 do {
   chosen = prompt('Type a number')
-  if (isNaN(chosen) || (chosen < 1))
+  if (isNaN(chosen) || (chosen <= 1))
     console.error('Type a valid number above 0')
-} while (isNaN(chosen) || (chosen < 1));
+} while (isNaN(chosen) || (chosen <= 1));
 for (counter = 1; counter <= chosen; counter = counter + 1) {
   console.log(counter);
 }
