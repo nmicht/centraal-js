@@ -20,29 +20,14 @@
 
 var price;
 var quantity;
-var x=0;
 var surcharges;
 
+quantity = getNumber('Escriba el numero de productos');
+
+price = getNumber('Escribe el precio del producto');
 
 
-do { 
-    
-    price = prompt('Escribe el precio del producto');
-    
-    if (isNaN(price)) {   
-        console.error('El valor', price, 'no es un precio valido');
-        console.warn('Intento numero',++x,);
-    }
 
-} while (isNaN(price))
-
-do {
-    quantity = prompt('¿Cuántos productos compraste?');
-    if (isNaN(quantity)) {
-        console.error('El valor', quantity, 'no es una cantidad valida');
-        console.warn('Intento numero',++x,);
-    }
-} while (isNaN(quantity))
 
 //Convertir a numero
 
@@ -52,9 +37,16 @@ surcharges = calcSurcharges(price, quantity);
 printTicket(surcharges.subtotal, surcharges.tax, surcharges.total);
 
 
-console.warn('Tu nivel de estupidez es ', x);
 
+/**
 
+* Print a ticket for a purchase including surcharges
+*
+* @param {number} subtotal The subtotal of the purchase
+* @param {number} tax      Calculated tax for the purchase
+* @param {number} total    The total amount
+*
+*/
 
 function printTicket(subtotal, tax, total) {
 console.log('GRACIAS POR TU COMPRA');
@@ -63,6 +55,17 @@ console.log('IVA: $', tax);
 console.log('Total: $', total);
 }
 
+
+/**
+
+* Calc the surcharges (subtotal, tax and total) based on price and quantity.
+*
+* @param {number} price     The price of the product
+* @param {number} quantity  The amount of products to buy
+*
+* @return {object}          An object with the subtotal, tax and total. 
+*
+*/
 
 function calcSurcharges(price, quantity) {
     price = Number(price);
@@ -79,6 +82,35 @@ function calcSurcharges(price, quantity) {
         total
     }
     }
+
+
+
+/**
+
+* Display a message and get the input from the user. Will return the input only when it is a number. 
+*
+* @param {string} message     The price of the product
+*
+* @return {number}          ....
+*
+*/
+
+function getNumber(message) {
+    var number; 
+    do {
+    number = prompt(message);
+    if (isNaN(number)) {
+        console.error('El valor', number, 'no es una cantidad valida');
+       
+    }
+} while (isNaN(number));
+
+return number; 
+    
+}
+
+
+
 
 
 </script>
