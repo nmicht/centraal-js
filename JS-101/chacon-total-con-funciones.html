@@ -26,9 +26,9 @@ surcharges = calcSurcharges(price, quantity);
 printTicket(surcharges.subtotal, surcharges.tax, surcharges.total);
 
 /**
- * [ask description]
- * @param  {[type]} mensaje [description]
- * @return {[type]}         [description]
+ * Displays a message, asks for a number, loops until a valid number is written
+ * @param  {string} message receives a number from the customer
+ * @return {number} number  transforms the string into a number
  */
 function getNumber(message) {
   var number;
