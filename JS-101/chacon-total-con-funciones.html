@@ -17,8 +17,8 @@ Salida:
 */
 var surcharges;
 
-price = ask('Type the price of the product');
-quantity= ask('Type quantity of products');
+price = getNumber('Type the price of the product');
+quantity = getNumber('Type quantity of products');
 surcharges = calcSurcharges(price, quantity);
 printTicket(surcharges.subtotal, surcharges.tax, surcharges.total);
 
@@ -27,12 +27,12 @@ printTicket(surcharges.subtotal, surcharges.tax, surcharges.total);
  * @param  {[type]} mensaje [description]
  * @return {[type]}         [description]
  */
-function ask(message) {
+function getNumber(message) {
   var number;
   do {
     number = prompt(message);
     if (isNaN(number)) {
-      console.error(number, 'is not a valid price');
+      console.error(number, 'is not a valid number');
     }
   } while (isNaN(number));
   return number;
