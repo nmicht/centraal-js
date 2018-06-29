@@ -15,32 +15,36 @@ Salida:
       IVA: $000,000.00
       Total: $000,000.00
 */
+var surcharges;
 
-var price;
-var quantity;
-var surcharges
-var error = 0;
-
-do {
-  price = prompt('Type the price of the product');
-  if (isNaN(price)) {
-    console.error(price, 'is not a valid price');
-    error = error + 1;
-  }
-} while (isNaN(price));
-
-do {
-  quantity = prompt('How many products did you buy?');
-  if (isNaN(quantity)) {
-    console.error(quantity, 'is not a valid quantity');
-    error = error + 1;
-  }
-} while (isNaN(quantity));
-
+price = ask('Type the price of the product');
+quantity= ask('Type quantity of products');
 surcharges = calcSurcharges(price, quantity);
-console.warn('Failed attempts', error);
 printTicket(surcharges.subtotal, surcharges.tax, surcharges.total);
 
+/**
+ * [ask description]
+ * @param  {[type]} mensaje [description]
+ * @return {[type]}         [description]
+ */
+function ask(message) {
+  var number;
+  do {
+    number = prompt(message);
+    if (isNaN(number)) {
+      console.error(number, 'is not a valid price');
+    }
+  } while (isNaN(number));
+  return number;
+}
+
+/**
+ * Prints a ticket for a purchase including the subcharges.
+ *
+ * @param  {number} subtotal The subtotal of the purchase.
+ * @param  {number} tax      Calculated tax for the purchase.
+ * @param  {number} total    Total amount to be payed.
+ */
 function printTicket(subtotal, tax, total) {
   console.log('Thanks for your purchase.');
   console.log('Subtotal: $', subtotal);
@@ -48,6 +52,13 @@ function printTicket(subtotal, tax, total) {
   console.log('Total: $', total);
 }
 
+/**
+ * Calc the surcharges (subtotal, tax & total) based on price and quantity.
+ * @param  {Number} price    The price of the product.
+ * @param  {Number} quantity The amount of products to buy.
+ *
+ * @return {Object}          An object with the subtotal, tax & total.
+ */
 function calcSurcharges(price, quantity) {
   var subtotal;
   var tax ;
