@@ -6,23 +6,21 @@ var tax;
 var total;
 var veces = 0;
 
-do{
-  price = prompt('Escribe el precio de tu producto');
-  if (isNaN(price)){
-    veces++;
+do {
+    price = prompt('Escribe el precio de tu producto');
+    if (isNaN(price)) {
+        veces += 1;
     console.error('El valor', price, 'no es valido');
   }
 } while (isNaN(price));
 
-do{
-  quantity = prompt('Cuantos productos compraste?');
+do {
+    quantity = prompt('Cuantos productos compraste?');
 } while (isNaN(quantity));
 console.warn('Tu nivel de estupidez es', veces);
 
 price = Number(price);
 quantity = Number(quantity);
-
-
 subtotal = price * quantity;
 tax = subtotal * .16;
 total = subtotal + tax;
