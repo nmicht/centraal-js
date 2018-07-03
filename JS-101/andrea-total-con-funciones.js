@@ -1,4 +1,3 @@
-<script type="text/javascript">
     /*
     programa que calcula el total a pagar por un tipo de producto
     - pregunta precio
@@ -56,9 +55,9 @@ price = getNumber('Escribe el precio del producto');
 */
 function printTicket(subtotal, tax, total) {
     console.log('GRACIAS POR TU COMPRA');
-    console.log('subtotal: $', subtotal);
-    console.log('iva: $', tax);
-    console.log('total: $', total);
+    console.log('subtotal: $', subtotal.toFixed(2));
+    console.log('iva: $', tax.toFixed(2));
+    console.log('total: $', total.toFixed(2));
 }
 /**
 *Calc the surcharges (subtotal, tax and total) based on price and quantity.
@@ -103,5 +102,3 @@ function getNumber (message) {
         number,
     };
 }
-
-</script>
