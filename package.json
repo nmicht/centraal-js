@@ -1,0 +1,24 @@
+{
+  "name": "centraal-js",
+  "version": "1.0.0",
+  "description": "This is a demo repo to work with centraal alumni to learn JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmicht/centraal-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nmicht/centraal-js/issues"
+  },
+  "homepage": "https://github.com/nmicht/centraal-js#readme",
+  "devDependencies": {
+    "eslint": "^5.0.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0"
+  }
+}
