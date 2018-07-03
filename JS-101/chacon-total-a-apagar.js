@@ -30,8 +30,7 @@ quantity = Number(quantity);
 
 if (isNaN(price) || isNaN(quantity)) {
     console.error('Please enter a valid number');
-}
-else {
+} else {
     subtotal = price * quantity;
     tax = subtotal * 0.16;
     total = subtotal + tax;
