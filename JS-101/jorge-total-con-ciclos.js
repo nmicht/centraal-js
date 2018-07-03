@@ -1,4 +1,4 @@
-<script>
+
 var price;
 var quantity;
 var subtotal;
@@ -31,4 +31,3 @@ console.log('Gracias por tu compra');
 console.log('El subtotal es: $', subtotal);
 console.log('IVA: $', tax);
 console.log('Total: $', total);
-</script>

@@ -1,4 +1,4 @@
-<script type="text/javascript">
+
 
 var numero;
 
@@ -11,5 +11,3 @@ numero = prompt('Escribe un numero');
 for (var conteo = 1; conteo <= numero; conteo++){
  console.log(conteo);
  }
-
-</script>
