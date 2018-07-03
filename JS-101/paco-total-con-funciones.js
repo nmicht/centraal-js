@@ -1,4 +1,3 @@
-<script type="text/javascript">
 /*
 Programa que calcula el total a pagar
 -pregunta el precio
@@ -60,5 +59,3 @@ function getNumber(message) {
     if (isNaN(number))
   }
 }
-
-</script>

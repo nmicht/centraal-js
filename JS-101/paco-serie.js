@@ -1,4 +1,3 @@
-<script type="text/javascript">
 /**
 *Serie del 1 hasta que otro número que el usuario define.
 SI el usuario no entra un número real, el sistema lo sigue pidiendo hasta que da un número real.
@@ -16,5 +15,3 @@ do {
 for (var serie = 1; serie <= end; serie++) {
   console.log(serie);
 }
-
-</script>

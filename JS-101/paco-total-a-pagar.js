@@ -1,4 +1,3 @@
-<script type="text/javascript">
 /*
 Programa que calcula el total a pagar por un tipo de producto
 - pregunta el precio
@@ -42,5 +41,3 @@ else {
     console.log('IVA: $', tax);
     console.log('Total: $', total);
 }
-
-</script>

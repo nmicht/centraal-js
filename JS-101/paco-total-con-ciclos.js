@@ -1,4 +1,3 @@
-<script type="text/javascript">
 /*
 Programa que calcula el total a pagar
 -pregunta el precio
@@ -51,6 +50,3 @@ console.log('GRACIAS POR SU COMPRA');
 console.log('Subtotal: $', subtotal);
 console.log('IVA: $', tax);
 console.log('Total: $', total);
-
-
-</script>

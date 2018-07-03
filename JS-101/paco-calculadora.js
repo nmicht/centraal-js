@@ -1,5 +1,3 @@
-<script type="text/javascript">
-
 /**
 *Sum of two numbers and print the results in the console.
 *@param {number} num1;
@@ -40,4 +38,3 @@ function division(num1, num2) {
 function square(num1, num2) {
   console.log(num1 * num2)
 }
-</script>
