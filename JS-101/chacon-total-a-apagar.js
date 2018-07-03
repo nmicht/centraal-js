@@ -1,4 +1,3 @@
-<script type="text/javascript">
 /*
 programa que calcula el total a pagar por un tipo de producto
 -pregunta el precio.
@@ -23,24 +22,22 @@ var tax;
 var total;
 
 price = prompt('Type the price of the product');
-quantity = prompt('How many products did you buy?')
+quantity = prompt('How many products did you buy?');
 
-//Convertir a números
+// Convertir a números
 price = Number(price);
 quantity = Number(quantity);
 
 if (isNaN(price) || isNaN(quantity)) {
-  console.error('Please enter a valid number')
+    console.error('Please enter a valid number');
 }
 else {
-  subtotal = price * quantity;
-  tax = subtotal * .16;
-  total = subtotal + tax;
-  //Salidas
-  console.log('Thanks for your purchase.');
-  console.log('Subtotal: $', subtotal);
-  console.log('Tax: $', tax);
-  console.log('Total: $', total);
+    subtotal = price * quantity;
+    tax = subtotal * 0.16;
+    total = subtotal + tax;
+    // Salidas
+    console.log('Thanks for your purchase.');
+    console.log('Subtotal: $', subtotal);
+    console.log('Tax: $', tax);
+    console.log('Total: $', total);
 }
-
-</script>
