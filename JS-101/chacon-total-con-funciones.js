@@ -54,20 +54,22 @@ function printTicket(subtotal, tax, total) {
 */
 function calcSurcharges(price, quantity) {
     var subtotal;
-    var tax ;
+    var tax;
     var total;
+    var priceNumber;
+    var quantityNumber;
 
-    price = Number(price);
-    quantity = Number(quantity);
+    priceNumber = Number(price);
+    quantityNumber = Number(quantity);
 
     subtotal = price * quantity;
-    tax = subtotal * .16;
+    tax = subtotal * 0.16;
     total = subtotal + tax;
 
     return {
         subtotal,
         tax,
-        total
+        total,
     };
 }
 
