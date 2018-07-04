@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "centraal",
-=======
   "name": "centraal-js",
->>>>>>> 4d3651ba6e73d1469cf8120892b361638ae5a413
   "version": "1.0.0",
   "description": "This is a demo repo to work with centraal alumni to learn JS",
   "main": "index.js",
