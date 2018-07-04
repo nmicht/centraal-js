@@ -11,6 +11,10 @@
     "url": "git+https://github.com/nmicht/centraal-js.git"
   },
   "author": "",
+  "contributors": {
+    "name": "Francisco Otero",
+    "email": "paquitotero@hotmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nmicht/centraal-js/issues"

@@ -1,4 +1,3 @@
-<script type="text/javascript">
     /*
     programa que calcula el total a pagar por un tipo de producto
     - pregunta precio
@@ -21,39 +20,26 @@ var quantity;
 var subtotal;
 var tax;
 var total;
-var totalestupido = 0;
 
-do {
-    price = prompt('Escribe el precio del producto');
-    if (isNaN(price)) {
-        totalestupido = totalestupido + 1;
-        console.error('Your ', price, ' is not valid. Please enter valid number');
-    }
-} while (isNaN(price));
-
-
-do {
-    quantity = prompt('Cuántos productos compraste?');
-    if (isNaN(quantity)) {
-        totalestupido++;
-        console.error('Your ', quantity, ' is not valid. Please enter valid number');
-    }
-} while (isNaN(quantity));
-
-console.warn('tus intentos fallidos son:', totalestupido);
+price = prompt('Escribe el precio del producto');
+quantity = prompt('Cuántos productos compraste?');
 
 //Convertir  NUMEROS
 price = Number(price);
 quantity = Number(quantity);
 
+if(isNaN(price) || isNaN(quantity)) {
+    console.error('Please enter valid number');
+}
+else {
 subtotal = price * quantity;
 tax = subtotal * .16;
 total = subtotal + tax;
 
 console.log('GRACIAS POR TU COMPRA');
-console.log('subtotal: $', subtotal);
+console.log('subtotal; $', subtotal);
 console.log('iva: $', tax);
 console.log('total: $', total);
+}
 
 
-</script>
