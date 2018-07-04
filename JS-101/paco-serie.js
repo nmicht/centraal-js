@@ -6,8 +6,8 @@ SI el usuario no entra un número real, el sistema lo sigue pidiendo hasta que d
 var end;
 
 do {
-  end = prompt('dame un número');
-  if (isNaN(end) || end <=1) {
+    end = prompt('dame un número');
+    if (isNaN(end) || end <=1) {
     console.error('Número no válido');
   }
 } while (isNaN(end) || end <= 1);
