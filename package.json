@@ -10,8 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/nmicht/centraal-js.git"
   },
-  "author": "Ramon Posadas",
-  "license": "MIT",
+  "author": "",
+  "contributors": [
+    "Ramón Posadas"
+  ],
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/nmicht/centraal-js/issues"
   },

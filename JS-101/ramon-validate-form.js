@@ -1,7 +1,4 @@
-
-
-
-/* Receives two passwords, checks if they are the same and sends a message "false" if it is not. 
+/* Receives two passwords, checks if they are the same and sends a message "false" if it is not.
 *
 * @param {string} pass1     First password entered
 * @param {string} pass2     Second password entered
@@ -12,17 +9,14 @@
 */
 
 function checkPass(pass1, pass2) {
-  
     if (pass1 === pass2) {
-        return  true;           
+        return true;
+    }
+    return false;
 }
-return false;
-
-}
 
 
-
-/* Validate if a person is an adult. 
+/* Validate if a person is an adult
 *
 * @param {number} age     Persons age
 *
@@ -32,10 +26,8 @@ return false;
 */
 
 function checkAge(age) {
-  
-  if (age => 18) {
-      return  true;           
-}
-return false;
-
+    if (age => 18) {
+        return true;
+    }
+    return false;
 }

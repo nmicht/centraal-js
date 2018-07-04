@@ -75,12 +75,12 @@ function calcSurcharges(price, quantity) {
         subtotal,
         tax,
         total,
-    }
-    }
+    };
+}
 
 
 /**
-*Display a message and get the input from the user. Will return the input only when it is a number. 
+*Display a message and get the input from the user. Will return the input only when it is a number.
 *
 * @param {string} message     The price of the product
 *
@@ -89,15 +89,13 @@ function calcSurcharges(price, quantity) {
 */
 
 function getNumber(message) {
-    var number; 
+    var number;
     do {
-    number = prompt(message);
-    if (isNaN(number)) {
-        console.error('El valor', number, 'no es una cantidad valida');
-       
-    }
-} while (isNaN(number));
+        number = prompt(message);
+        if (isNaN(number)) {
+            console.error('El valor', number, 'no es una cantidad valida');
+        }
+    } while (isNaN(number));
 
-return number; 
-   
+    return number;
 }

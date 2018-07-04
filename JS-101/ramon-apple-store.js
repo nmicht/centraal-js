@@ -6,39 +6,27 @@ const tax = 0.16;
 const spendingThreshold = 20000;
 
 
-var bankAccount = 35000; 
+var bankAccount = 35000;
 var phoneQuantity;
 var accesoryQuantity;
 var surcharges;
 
 
+do {
+    numberPhone = phonePrice*phoneQuantity;
+    if (numberPhone <= spendingThreshold) {
+        numberAccesory = accesoryPrice*accesoryQuantity;
+    }
 
+    numberSubtotal = numberPhone + numberAccesory
+} while (numberPhone <= bankAccount);
 
-function getSubtotal(phonePrice, phoneQuantity, accesoryPrice, accesoryQuantity, bankAccount, spendingThreshold){
-    var numberPhone
-    var numberAccesory
-    var numberSubtotal
-
-    do {
-        numberPhone = phonePrice*phoneQuantity;
-        if (numberPhone <= spendingThreshold ) {
-            numberAccesory = accesoryPrice*accesoryQuantity;
-        }
-        
-        numberSubtotal = numberPhone + numberAccesory
-
-    } while (numberPhone <= bankAccount)
-    return numberSubtotal 
-}
-
-
-//Convertir a numero
+// Convertir a numero
 
 
 surcharges = calcSurcharges(price, quantity);
 
 printTicket(surcharges.subtotal, surcharges.tax, surcharges.total);
-
 
 
 /**
@@ -66,39 +54,31 @@ console.log('Total: $', total.toFixed(2));
 * @param {number} price     The price of the product
 * @param {number} quantity  The amount of products to buy
 *
-* @return {object}          An object with the subtotal, tax and total. 
+* @return {object}          An object with the subtotal, tax and total.
 *
 */
 
 function calcSurcharges(quantity) {
-    
-    quantity = Number(quantity);        
-            
+    quantity = Number(quantity);
+
 
     var subtotal = price * quantity;
     var tax = subtotal * 0.16;
     var total = subtotal + tax;
-    
+
     return {
         subtotal,
         tax,
-        total
-    }
-    }
-
-
+        total,
+    };
+}
 
 /**
 
-* Display a message and get the input from the user. Will return the input only when it is a number. 
+* Display a message and get the input from the user. Will return the input only when it is a number.
 *
 * @param {string} message     The price of the product
 *
 * @return {number}          ....
 *
 */
-
-
-
-
-
