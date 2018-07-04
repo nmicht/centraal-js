@@ -1,4 +1,3 @@
-
 var price;
 var quantity;
 var subtotal;

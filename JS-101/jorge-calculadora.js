@@ -1,4 +1,3 @@
-
 /**
    * Sum od two and print the result on the console.
    * @param  {number} num1
