@@ -1,7 +1,7 @@
 {
   "name": "centraal-js",
   "version": "1.0.0",
-  "description": "repo with js exercises",
+  "description": "This is a demo repo to work with centraal alumni to learn JS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
