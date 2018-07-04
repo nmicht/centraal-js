@@ -13,5 +13,5 @@ do {
 } while (isNaN(end) || end <= 1);
 
 for (var serie = 1; serie <= end; serie++) {
-  console.log(serie);
+    console.log(serie);
 }
