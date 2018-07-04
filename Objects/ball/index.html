@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div>
+        <img src="http://static1.kizi.com/system/static/thumbs/tile_thumb/204/thumb150_49.jpg" alt="red">
+        <button type="button" onclick="hiClicked()">Say Hi</button>
+        <textarea id="messages"></textarea>
+    </div>
+
+    <script type="text/javascript" src="js/ball.js"></script>
+    <script type="text/javascript">
+        function hiClicked() {
+            let msg = ball.sayHi();
+
+            let textarea = document.getElementById('messages');
+
+            let oldMsgs = textarea.textContent;
+
+            console.log(oldMsgs, msg);
+            textarea.textContent = oldMsgs + ' ' + msg;
+    }
+    </script>
+</body>
+</html>
