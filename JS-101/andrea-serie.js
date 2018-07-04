@@ -1,4 +1,3 @@
-<script type="text/javascript">
 // Serie del 1 al 10
 
 var serie;
@@ -14,4 +13,3 @@ do {
 for (var serie = 1; serie <= numero; serie = serie + 1){
     console.log (serie)
 }
-</script>

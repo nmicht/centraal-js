@@ -10,8 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/nmicht/centraal-js.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Andrea Pinal",
+  "contributors": [
+    {
+      "name": "Chacon",
+      "email": "cristianchacon99@gmail.com",
+    }
+  ],
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/nmicht/centraal-js/issues"
   },
