@@ -45,10 +45,10 @@ printTicket(surcharges.subtotal, surcharges.tax, surcharges.total);
 */
 
 function printTicket(subtotal, tax, total) {
-console.log('GRACIAS POR TU COMPRA');
-console.log('Subtotal: $', subtotal.toFixed(2));
-console.log('IVA: $', tax.toFixed(2));
-console.log('Total: $', total.toFixed(2));
+    console.log('GRACIAS POR TU COMPRA');
+    console.log('Subtotal: $', subtotal.toFixed(2));
+    console.log('IVA: $', tax.toFixed(2));
+    console.log('Total: $', total.toFixed(2));
 }
 
 
