@@ -6,8 +6,12 @@ trim_trailing_whitespace = true
 indent_style = space
 indent_size = 4
 
+<<<<<<< HEAD
 [*.json}]
 
+=======
+[*.json]
+>>>>>>> 4d3651ba6e73d1469cf8120892b361638ae5a413
 indent_size = 2
 
 [*.md]
