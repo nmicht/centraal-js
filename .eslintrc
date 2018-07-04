@@ -1,7 +1,6 @@
 {
     "extends": "airbnb-base",
     "rules": {
-      "indent": ["error", 4],
-      "quotes": ["error", single]
-      }
+            "indent": ["error", 4]
+    }
 }
