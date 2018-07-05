@@ -1,8 +1,8 @@
 /*
 El programa muestra en la consola la serie del 1 al numero que el usuario elija
 */
-var counter;
-var chosen;
+let counter;
+let chosen;
 do {
     chosen = prompt('Type a number');
     if (isNaN(chosen) || (chosen <= 1)) {
