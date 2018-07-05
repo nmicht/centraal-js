@@ -1,44 +1,46 @@
-"use strict";
-/*
-Programa que calcula el total a pagar por un tipo de producto
-- pregunta el precio
-- pregunta la cantidad de articulos
-- calcula el subtotal
-- desglosa el iva
-- entrega en la consola el total a pagar
+(function () {
+    'use strict';
 
-Entradas: cantidad de productos, el precio
-Proceso: cp x pre, eso x 16%, suma
-Salida:
-        GRACIAS POR TU COMPRA
-        Subtotal: $000,000.00
-        Iva: $000,000.00
-        Total: $000,000.00
-*/
+    /*
+    Programa que calcula el total a pagar por un tipo de producto
+    - pregunta el precio
+    - pregunta la cantidad de articulos
+    - calcula el subtotal
+    - desglosa el iva
+    - entrega en la consola el total a pagar
 
-let price;
-let quantity;
-let subtotal;
-let tax;
-let total;
+    Entradas: cantidad de productos, el precio
+    Proceso: cp x pre, eso x 16%, suma
+    Salida:
+    GRACIAS POR TU COMPRA
+    Subtotal: $000,000.00
+    Iva: $000,000.00
+    Total: $000,000.00
+    */
 
-price = prompt('Escribe el precio del producto');
-quantity = prompt('Cuántos productos compraste?');
+    let price;
+    let quantity;
+    let subtotal;
+    let tax;
+    let total;
 
-//Convertir a numeros
-price = Number(price);
-quantity = Number(quantity);
+    price = prompt('Escribe el precio del producto');
+    quantity = prompt('Cuántos productos compraste?');
 
-if (isNaN(price) || isNaN(quantity)) {
-    console.error('Datos no validos');
-}
-else {
-    subtotal = price * quantity;
-    tax = subtotal * .16;
-    total = subtotal + tax;
+    // Convertir a numeros
+    price = Number(price);
+    quantity = Number(quantity);
 
-    console.log('GRACIAS POR TU COMPRA');
-    console.log('Subtotal: $', subtotal);
-    console.log('IVA: $', tax);
-    console.log('Total: $', total);
-}
+    if (isNaN(price) || isNaN(quantity)) {
+        console.error('Datos no validos');
+    } else {
+        subtotal = price * quantity;
+        tax = subtotal * 0.16;
+        total = subtotal + tax;
+
+        console.log('GRACIAS POR TU COMPRA');
+        console.log('Subtotal: $', subtotal);
+        console.log('IVA: $', tax);
+        console.log('Total: $', total);
+    }
+}());
