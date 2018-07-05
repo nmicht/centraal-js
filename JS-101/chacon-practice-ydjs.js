@@ -1,5 +1,5 @@
 function bankAccountAsk(message) {
-    var money;
+    let money;
     do {
         money = prompt(message);
         if (isNaN(money)) {
@@ -10,7 +10,7 @@ function bankAccountAsk(message) {
 }
 
 function buyPhone(phoneTotal, bankAccount) {
-    var phonesBought = 0;
+    let phonesBought = 0;
     do {
         phonesBought += 1;
     } while (Bank >= phoneTotal);
@@ -18,10 +18,10 @@ function buyPhone(phoneTotal, bankAccount) {
 }
 
 function phonePrice() {
-    var phone = 200;
-    var tax = 0.16;
-    var accessory = 30;
-    var phoneTotal;
+    let phone = 200;
+    let tax = 0.16;
+    let accessory = 30;
+    let phoneTotal;
 
     phoneTotal = ((phone + accessory) * (1 + tax));
 
@@ -32,7 +32,7 @@ function printTicket() {
     console.log('Thanks for your purchase');
     console.log();
 }
-var bankAccount;
-var totalPhonePrice = phonePrice();
+let bankAccount;
+let totalPhonePrice = phonePrice();
 
 bankAccount = bankAccountAsk('How much money have you got?');
