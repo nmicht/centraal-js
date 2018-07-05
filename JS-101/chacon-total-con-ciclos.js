@@ -15,12 +15,12 @@ Salida:
       Total: $000,000.00
 */
 
-var price;
-var quantity;
-var subtotal;
-var tax;
-var total;
-var error = 0;
+let price;
+let quantity;
+let subtotal;
+let tax;
+let total;
+let error = 0;
 
 do {
   price = prompt('Type the price of the product');
