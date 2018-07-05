@@ -15,7 +15,7 @@ function hiClicked() {
     let oldMsg = textArea.textContent;
     textArea.textContent = oldMsg + ' ' + msg;
     console.log(msg);
-};
+}
 function massage() {
     let msg = silla.massage();
     let textArea = document.getElementById('messages');
