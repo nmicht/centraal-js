@@ -1,4 +1,4 @@
-
+"use strict";
 
 const phonePrice = 1000;
 const accesoryPrice = 500;

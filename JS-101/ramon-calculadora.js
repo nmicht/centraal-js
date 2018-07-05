@@ -1,4 +1,4 @@
-
+"use strict";
 /**
 * Sum two different numbers and print the results.
 * @param {number} num1
