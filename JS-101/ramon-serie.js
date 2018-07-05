@@ -3,8 +3,8 @@
 Serie del uno al diez en consola
 */
 
-var numero;
-var counter = 1;
+let numero;
+let counter = 1;
 
 do {
     numero = prompt('Escribe un numero mayor a 1');
