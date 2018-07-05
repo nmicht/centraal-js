@@ -1,7 +1,7 @@
 // Serie del 1 al 10
 
-var serie;
-var numero;
+let serie;
+let numero;
 
 do {
     numero = prompt('Escribe un número arriba de 1');
@@ -10,6 +10,6 @@ do {
     }
 } while (isNaN(numero) || (numero <= 1));
 
-for (var serie = 1; serie <= numero; serie = serie + 1){
+for (let serie = 1; serie <= numero; serie = serie + 1){
     console.log (serie)
 }

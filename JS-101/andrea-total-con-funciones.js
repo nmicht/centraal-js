@@ -5,22 +5,22 @@
     - calcula el subtotal
     - desglosa el iva
     - entrega en la consola el total a pagar
-    
+
     Entradas: precio, cantidad de productos,
     Proceso: cantprod x precio, esp x 16%, suma
-    Salida: 
+    Salida:
         GRACIAS POR TU COMPRA
         subtotal: $000,000.00
         iva: $000,000.00
         total: $000,000.00
     */
 
-var price;
-var quantity;
-var subtotal;
-var tax;
-var total;
-var totalestupido = 0;
+let price;
+let quantity;
+let subtotal;
+let tax;
+let total;
+let totalestupido = 0;
 
 do {
     price = prompt('Escribe el precio del producto');
@@ -67,9 +67,9 @@ function printTicket(subtotal, tax, total) {
 * @return {object}              An object with the subtotal, tax and total
 */
 function calcbreakdown (price, quantity) {
-    var subtotal;
-    var tax;
-    var total;
+    let subtotal;
+    let tax;
+    let total;
 
     //Convertir  NUMEROS
     price = Number(price);

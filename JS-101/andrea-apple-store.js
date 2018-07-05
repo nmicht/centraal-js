@@ -16,10 +16,10 @@
         total: $000,000.00
  */
 
-var subtotal = 1;
-var total;
-var totalestupido = 0;
-var quantity;
+let subtotal = 1;
+let total;
+let totalestupido = 0;
+let quantity;
 const taxRate = .16;
 const phonePrice = 6;
 const balance = 100;
@@ -65,9 +65,9 @@ function printTicket(subtotal, tax, total) {
 * @return {object}              An object with the subtotal, tax and total
 */
 function calcbreakdown (price, quantity) {
-    var subtotal;
-    var tax;
-    var total;
+    let subtotal;
+    let tax;
+    let total;
 
     //Convertir  NUMEROS
     price = Number(price);
@@ -88,7 +88,7 @@ function calcbreakdown (price, quantity) {
 
 */
 function getNumber (message) {
-    var number;
+    let number;
     do {
         number = prompt (message);
         if (isNaN(number)) {

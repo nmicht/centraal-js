@@ -15,11 +15,11 @@
         total: $000,000.00
     */
 
-var price;
-var quantity;
-var subtotal;
-var tax;
-var total;
+let price;
+let quantity;
+let subtotal;
+let tax;
+let total;
 
 price = prompt('Escribe el precio del producto');
 quantity = prompt('Cuántos productos compraste?');

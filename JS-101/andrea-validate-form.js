@@ -6,7 +6,7 @@ compares two string. returns a "true" or "false" depending
 **/
 function compare(password1, password2) {
     if (password1 = password2) {
-        return true; 
+        return true;
     }
     return false;
 }
@@ -18,7 +18,7 @@ validar si es mayor de edad y regresar verdadero, else falso
 **/
 function valAge(age) {
     if (age >= 18) {
-        return true; 
+        return true;
     }
     return false;
 }
