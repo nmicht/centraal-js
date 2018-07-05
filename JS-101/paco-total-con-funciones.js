@@ -1,3 +1,4 @@
+(function () {
 /*
 Programa que calcula el total a pagar
 -pregunta el precio
@@ -15,47 +16,49 @@ Salida:
         Total: $000,000.00
 */
 
-var price;
-var quantity;
-var surcharges;
+    let price;
+    let quantity;
+    let surcharges;
 
-price = getNumber('Escribe el precio del producto');
-quantity = getNumber('¿Cuántos productos compraste?');
+    price = getNumber('Escribe el precio del producto');
+    quantity = getNumber('¿Cuántos productos compraste?');
 
-surcharges = calcSurcharges(price, quantity);
-printTicket(surcharges.subtotal, surcharges.tax, surcharges.total);
-
-
-function printTicket(subtotal, tax, total) {
-  console.log('GRACIAS POR SU COMPRA');
-  console.log('Subtotal: $', subtotal);
-  console.log('IVA: $', tax);
-  console.log('Total: $', total);
-}
-function calcSurcharges(price, quantity) {
-  var subtotal;
-  var tax;
-  var total;
-
-  price = Number(price);
-  quantity = Number(quantity);
-
-  subtotal = price * quantity;
-  tax = subtotal * .16;
-  total = subtotal + tax;
-
-  return {
-    subtotal,
-    tax,
-    total
-  };
-}
+    surcharges = calcSurcharges(price, quantity);
+    printTicket(surcharges.subtotal, surcharges.tax, surcharges.total);
 
 
-function getNumber(message) {
-  var number;
-  do {
-    number = prompt(message);
-    if (isNaN(number))
-  }
-}
+    function printTicket(subtotal, tax, total) {
+        console.log('GRACIAS POR SU COMPRA');
+        console.log('Subtotal: $', subtotal);
+        console.log('IVA: $', tax);
+        console.log('Total: $', total);
+    }
+    function calcSurcharges(price, quantity) {
+        let subtotal;
+        let tax;
+        let total;
+
+        price = Number(price);
+        quantity = Number(quantity);
+
+        subtotal = price * quantity;
+        tax = subtotal * 0.16;
+        total = subtotal + tax;
+
+        return {
+            subtotal,
+            tax,
+            total
+        };
+    }
+
+
+    function getNumber(message) {
+        let number;
+        do {
+            number = prompt(message);
+            if (isNaN(number)) {
+            }
+        } while (true);
+    }
+}());
