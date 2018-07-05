@@ -1,3 +1,4 @@
+"use strict";
 /**
  * Adds two numbers and print the result
  * @param  {number} num1 First number

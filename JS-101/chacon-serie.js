@@ -1,3 +1,4 @@
+"use strict";
 /*
 El programa muestra en la consola la serie del 1 al numero que el usuario elija
 */

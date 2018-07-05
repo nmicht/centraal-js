@@ -1,3 +1,4 @@
+"use strict";
 /**
  * A function that validates if two password inputs are the same.
  * @param  {string} pass1 First password.
