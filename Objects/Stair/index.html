@@ -9,18 +9,11 @@
         <div class="">
             <img src="https://d3i6fh83elv35t.cloudfront.net/newshour/app/uploads/2017/07/steps2_550px_30lossy_perceptual.gif" alt="Stair of the future">
             <button type="button" onclick="hiClicked()">Greetings</button>
+            <button type="button" onclick="goUpClicked()">Go Up</button>
         </div>
         <div class="">
             <textarea id="messages"></textarea>
         </div>
         <script type="text/javascript" src="js/escaleraElectrica.js"></script>
-        <script type="text/javascript">
-            function hiClicked() {
-                var msg = stair.sayHi();
-                var box = document.getElementById('messages');
-                var oldBox = box.textContent;
-                box.textContent = oldBox + ' ' + msg;
-            }
-        </script>
     </body>
 </html>
