@@ -1,5 +1,6 @@
 (function () {
     'use strict';
+
     function bankAccountAsk(message) {
         let money;
         do {
