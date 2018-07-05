@@ -17,9 +17,9 @@
 
      */
 
-var price;
-var quantity;
-var surcharges;
+let price;
+let quantity;
+let surcharges;
 
 quantity = getNumber('Escriba el numero de productos');
 
@@ -67,9 +67,9 @@ function calcSurcharges(price, quantity) {
     price = Number(price);
     quantity = Number(quantity);
 
-    var subtotal = price * quantity;
-    var tax = subtotal * 0.16;
-    var total = subtotal + tax;
+    let subtotal = price * quantity;
+    let tax = subtotal * 0.16;
+    let total = subtotal + tax;
 
     return {
         subtotal,
@@ -89,7 +89,7 @@ function calcSurcharges(price, quantity) {
 */
 
 function getNumber(message) {
-    var number;
+    let number;
     do {
         number = prompt(message);
         if (isNaN(number)) {

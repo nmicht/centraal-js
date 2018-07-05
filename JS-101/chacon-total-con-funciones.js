@@ -21,7 +21,7 @@ Salida:
 * @return {number} number  transforms the string into a number
 */
 function getNumber(message) {
-    var number;
+    let number;
     do {
         number = prompt(message);
         if (isNaN(number)) {
@@ -53,11 +53,11 @@ function printTicket(subtotal, tax, total) {
 * @return {Object}          An object with the subtotal, tax & total.
 */
 function calcSurcharges(price, quantity) {
-    var subtotal;
-    var tax;
-    var total;
-    var priceNumber;
-    var quantityNumber;
+    let subtotal;
+    let tax;
+    let total;
+    let priceNumber;
+    let quantityNumber;
 
     priceNumber = Number(price);
     quantityNumber = Number(quantity);
@@ -73,9 +73,9 @@ function calcSurcharges(price, quantity) {
     };
 }
 
-var quantity;
-var price;
-var surcharges;
+let quantity;
+let price;
+let surcharges;
 
 price = getNumber('Type the price of the product');
 quantity = getNumber('Type quantity of products');

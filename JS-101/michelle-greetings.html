@@ -5,10 +5,13 @@
         <title></title>
     </head>
     <body>
-        <!-- <button type="button" onclick="greetings(prompt('Escribe el nombre'));">Saluda</button>
-        <button type="button" onclick="bye(prompt('Escribe de quien te quieres despedir'));">Despidete</button> -->
+        <button type="button" onclick="greetings(prompt('Escribe el nombre'));">Saluda</button>
+
+        <button type="button" onclick="bye(prompt('Escribe de quien te quieres despedir'));">Despidete</button>
 
         <script type="text/javascript">
+            'use strict';
+
             function greetings(nombre) {
                 console.log('Hola ', nombre);
             }
@@ -16,10 +19,6 @@
             function bye(fulanito) {
                 console.log('Adios ', fulanito);
             }
-
-            var nombre = prompt('Dime tu nombre');
-
-            greetings(nombre);
         </script>
     </body>
 </html>
