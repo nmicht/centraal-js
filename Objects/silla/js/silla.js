@@ -8,3 +8,18 @@ let silla = {
         return `${this.name} will shake your ass ${name}, until you feel OK`;
     },
 };
+
+function hiClicked() {
+    let msg = silla.sayHi();
+    let textArea = document.getElementById('messages');
+    let oldMsg = textArea.textContent;
+    textArea.textContent = oldMsg + ' ' + msg;
+    console.log(msg);
+};
+function massage() {
+    let msg = silla.massage();
+    let textArea = document.getElementById('messages');
+    let oldMsg = textArea.textContent;
+    textArea.textContent = oldMsg + ' ' + msg;
+    console.log(msg);
+}

@@ -10,16 +10,10 @@
       <button type="button" onclick="hiClicked()">Say Hi</button>
       <textarea id="messages"></textarea>
     </div>
+    <div class="container">
+      <button type="button" onclick="massage()">Massage</button>
+    </div>
 
     <script type="text/javascript" src="js/silla.js"></script>
-    <script type="text/javascript">
-        function hiClicked() {
-          let msg = silla.sayHi();
-          let textArea = document.getElementById('messages');
-          let oldMsg = textArea.textContent;
-          textArea.textContent = oldMsg + ' ' + msg;
-          console.log(msg);
-        }
-    </script>
   </body>
 </html>
