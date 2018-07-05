@@ -1,5 +1,6 @@
 (function () {
-    "use strict";
+    'use strict';
+
     const phonePrice = 1000;
     const accesoryPrice = 500;
     const tax = 0.16;

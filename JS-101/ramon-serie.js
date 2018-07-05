@@ -1,5 +1,6 @@
 (function () {
-    "use strict";
+    'use strict';
+
     /**
     Serie del uno al diez en consola
     */

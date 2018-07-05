@@ -1,5 +1,6 @@
 (function () {
-    "use strict";
+    'use strict';
+
     /* Receives two passwords, checks if they are the same and sends a message "false" if it is not.
     *
     * @param {string} pass1     First password entered
