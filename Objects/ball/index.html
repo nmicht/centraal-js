@@ -10,7 +10,7 @@
     <div>
         <img src="http://static1.kizi.com/system/static/thumbs/tile_thumb/204/thumb150_49.jpg" alt="red">
         <button type="button" onclick="hiClicked()">Say Hi</button>
-        <textarea id="messages"></textarea>
+        <textarea name="" id="messages" cols="30" rows="10"></textarea>
     </div>
 
     <script type="text/javascript" src="js/ball.js"></script>
@@ -18,11 +18,10 @@
         function hiClicked() {
             let msg = ball.sayHi();
 
-            let textarea = document.getElementById('messages');
+            let textarea = document.getElementById("messages");
 
             let oldMsgs = textarea.textContent;
 
-            console.log(oldMsgs, msg);
             textarea.textContent = oldMsgs + ' ' + msg;
     }
     </script>
