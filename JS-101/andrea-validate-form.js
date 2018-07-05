@@ -1,3 +1,4 @@
+"use strict";
 /**
 compares two string. returns a "true" or "false" depending
 @param {string}         password1

@@ -1,3 +1,4 @@
+"use strict";
     /*
     programa que calcula el total a pagar por un tipo de producto
     - pregunta precio
