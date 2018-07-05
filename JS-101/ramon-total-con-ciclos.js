@@ -16,16 +16,16 @@
              Total: $000,000.00
 */
 
-var price;
-var quantity;
-var subtotal;
-var tax;
-var total;
-var x=0;
+let price;
+let quantity;
+let subtotal;
+let tax;
+let total;
+let x=0;
 
 
-do {    
-    price = prompt('Escribe el precio del producto');  
+do {
+    price = prompt('Escribe el precio del producto');
     if (isNaN(price)) {
         console.error('El valor', price, 'no es un precio valido');
         console.warn('Intento numero',++x,);

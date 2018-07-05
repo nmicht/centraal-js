@@ -6,10 +6,10 @@ const tax = 0.16;
 const spendingThreshold = 20000;
 
 
-var bankAccount = 35000;
-var phoneQuantity;
-var accesoryQuantity;
-var surcharges;
+let bankAccount = 35000;
+let phoneQuantity;
+let accesoryQuantity;
+let surcharges;
 
 
 do {
@@ -60,9 +60,9 @@ function calcSurcharges(quantity) {
     quantity = Number(quantity);
 
 
-    var subtotal = price * quantity;
-    var tax = subtotal * 0.16;
-    var total = subtotal + tax;
+    let subtotal = price * quantity;
+    let tax = subtotal * 0.16;
+    let total = subtotal + tax;
 
     return {
         subtotal,
