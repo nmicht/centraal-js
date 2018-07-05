@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <img src="https://orig00.deviantart.net/f804/f/2015/251/7/6/futurama_bender_by_pyjyingjie-d98ua4d.gif" alt="Blender">
+            <button type="button" onclick="hiClicked()">Say Hi</button>
+            <textarea id="messages"></textarea>
+        </div>
+
+        <script type="text/javascript" src="js/robot.js"></script>
+        <script type="text/javascript">
+            function hiClicked() {
+                let msg = robot.sayHi();
+                let textarea = document.getElementById('messages');
+                let oldMsgs = textarea.textContent;
+                textarea.textContent = oldMsgs + ' ' + msg;
+            }
+        </script>
+    </body>
+</html>

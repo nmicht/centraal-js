@@ -1,4 +1,4 @@
-<script type="text/javascript">
+"use strict";
 /*
 Programa que calcula el total a pagar por un tipo de producto
 - pregunta el precio
@@ -16,12 +16,12 @@ Salida:
         Total: $000,000.00
 */
 
-var price;
-var quantity;
-var subtotal;
-var tax;
-var total;
-var stupid = 0;
+let price;
+let quantity;
+let subtotal;
+let tax;
+let total;
+let stupid = 0;
 
 do {
     price = prompt('Escribe el precio del producto');
@@ -53,5 +53,3 @@ console.log('GRACIAS POR TU COMPRA');
 console.log('Subtotal: $', subtotal);
 console.log('IVA: $', tax);
 console.log('Total: $', total);
-
-</script>

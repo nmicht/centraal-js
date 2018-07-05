@@ -1,42 +1,36 @@
-<script>
-    /* 
+
+/**
     Programa que calcula el total a pagar por un tipo de producto
     - pregunta el precio
     - pregunta la cantidad de articulos
     - calcula el subtotal
     - desglosa el iva
     - entrega en la consola el total a pagar
-   
 
     Entradas: Cantidad de productos, precio
     Proceso: cp x pre, eso x 16%, suma
-    Salida: 
+    Salida:
         GRACIAS POR TU COMPRA
         Subtotal:   $000,000.00
              Iva:   $000,000.00
              Total: $000,000.00
+*/
 
-     */
-
-var price;
-var quantity;
-var subtotal;
-var tax;
-var total;
-var x=0;
-
+let price;
+let quantity;
+let subtotal;
+let tax;
+let total;
+let x=0;
 
 
-do { 
-    
+do {
     price = prompt('Escribe el precio del producto');
-    
-    if (isNaN(price)) {   
+    if (isNaN(price)) {
         console.error('El valor', price, 'no es un precio valido');
         console.warn('Intento numero',++x,);
     }
-
-} while (isNaN(price))
+} while (isNaN(price));
 
 do {
     quantity = prompt('¿Cuántos productos compraste?');
@@ -44,14 +38,12 @@ do {
         console.error('El valor', quantity, 'no es una cantidad valida');
         console.warn('Intento numero',++x,);
     }
-} while (isNaN(quantity))
+} while (isNaN(quantity));
 
-//Convertir a numero
+// Convertir a numero
 
 price = Number(price);
 quantity = Number(quantity);
-
-
 
 subtotal = price * quantity;
 tax = subtotal * 0.16;
@@ -62,6 +54,3 @@ console.log('GRACIAS POR TU COMPRA');
 console.log('Subtotal: $', subtotal);
 console.log('IVA: $', tax);
 console.log('Total: $', total);
-
-
-</script>
