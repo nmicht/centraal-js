@@ -9,6 +9,7 @@
         <button type="button" onclick="bye(prompt('Escribe de quien te quieres despedir'));">Despidete</button> -->
 
         <script type="text/javascript">
+            "use strict";
             function greetings(nombre) {
                 console.log('Hola ', nombre);
             }
@@ -17,7 +18,7 @@
                 console.log('Adios ', fulanito);
             }
 
-            var nombre = prompt('Dime tu nombre');
+            let nombre = prompt('Dime tu nombre');
 
             greetings(nombre);
         </script>
