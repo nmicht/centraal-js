@@ -1,4 +1,4 @@
-<script type="text/javascript">
+"use strict";
 /**
  * Serie desde el 1 hasta otro numero que el usuario define.
  *
@@ -6,7 +6,7 @@
  * pidiendo hasta que da un numero real.
  */
 
-var end;
+let end;
 
 do {
     end = prompt("Hasta que numero quieres la serie? (mayor a 1)");
@@ -15,9 +15,6 @@ do {
     }
 } while (isNaN(end) || end <= 1);
 
-for (var serie = 1; serie <= end; serie++) {
+for (let serie = 1; serie <= end; serie++) {
     console.log(serie);
 }
-
-
-</script>
