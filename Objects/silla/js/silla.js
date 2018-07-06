@@ -13,27 +13,11 @@ btnHi.onclick = function () {
     addMessage(silla.sayHi());
 };
 const btnMsg = document.getElementById('massageButton');
-btnMsg.conclick = function () {
+btnMsg.onclick = function () {
     addMessage(silla.massage());
 };
-/*
-function hiClicked() {
-    let msg = silla.sayHi();
-    let textArea = document.getElementById('messages');
-    let oldMsg = textArea.textContent;
-    textArea.textContent = oldMsg + ' ' + msg;
-    console.log(msg);
-}
-function massage() {
-    let msg = silla.massage();
-    let textArea = document.getElementById('messages');
-    let oldMsg = textArea.textContent;
-    textArea.textContent = oldMsg + ' ' + msg;
-    console.log(msg);
-}
-*/
 function addMessage(msg) {
     const textarea = document.getElementById('messages');
     const oldMsg = textarea.textContent;
-    textarea.textContent = `${oldMsg}\n${messages}`;
+    textarea.textContent = `${oldMsg}\n${msg}`;
 }
