@@ -84,5 +84,4 @@
     quantity = getNumber('Type quantity of products');
     surcharges = calcSurcharges(price, quantity);
     printTicket(surcharges.subtotal, surcharges.tax, surcharges.total);
-
 }());
