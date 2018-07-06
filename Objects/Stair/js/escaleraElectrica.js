@@ -20,38 +20,33 @@ const stair = {
     },
     bye: function bye(friendo) {
         console.log('bye ', friendo);
-    }
+    },
 };
 
-let btnHi = document.getElementById('buttonHi')
+const btnHi = document.getElementById('buttonHi');
 btnHi.onclick = function () {
-    const msg = stair.sayHi();
-    addMessage(msg)
-}
+    addMessage(stair.sayHi());
+};
 
-let btnUp = document.getElementById('buttonUp')
+const btnUp = document.getElementById('buttonUp');
 btnUp.onclick = function () {
-    const msg = stair.getUp();
-    addMessage(msg)
-}
+    addMessage(stair.getUp());
+};
 
-let btnDown = document.getElementById('buttonDown')
+const btnDown = document.getElementById('buttonDown');
 btnDown.onclick = function () {
-    const msg = stair.goDown();
-    addMessage(msg)
-}
+    addMessage(stair.goDown());
+};
 
-let btnStop = document.getElementById('buttonStop')
+const btnStop = document.getElementById('buttonPowerDown');
 btnStop.onclick = function () {
-    const msg = stair.stop();
-    addMessage(msg)
-}
+    addMessage(stair.stop());
+};
 
-let btnPowerDown = document.getElementById('buttonPowerDown')
+const btnPowerDown = document.getElementById('buttonShutDown');
 btnPowerDown.onclick = function () {
-    const msg = stair.powerDown();
-    addMessage(msg)
-}
+    addMessage(stair.powerDown());
+};
 
 function addMessage(msg) {
     const box = document.getElementById('messages');
