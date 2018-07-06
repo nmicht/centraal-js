@@ -1,3 +1,5 @@
+'use strict';
+
 let stair = {
     name: 'Stair of the future',
     numberStairs: '35',
@@ -5,15 +7,32 @@ let stair = {
         return `Greetings ${name} I'm the ${this.name}`;
     },
     getUp: function getUp(name = '') {
-        return `Go up ${name}`;
+        return `Lets go to the top ${name}`;
     },
     goDown: function goDown() {
-        return 'Go down';
+        return `Lets go to the bottom ${name}`;
     },
     stop: function stop() {
-        return 'Stop in case of emergency';
+        return `Lets take a break ${name}`;
     },
     powerDown: function powerDown() {
-        return 'Turn off';
+        return 'You can´t stop the tried to stop the future';
     },
+    bye: function bye(friendo) {
+        console.log('bye ', friendo);
+    }
 };
+
+function hiClicked() {
+    let msg = stair.sayHi();
+    let box = document.getElementById('messages');
+    let oldBox = box.textContent;
+    box.textContent = `${oldBox} \n ${msg}`;
+}
+
+function goUpClicked() {
+    let msg = stair.getUp();
+    let box = document.getElementById('messages');
+    let oldBox = box.textContent;
+    box.textContent = `${oldBox} \n ${msg}`;
+}

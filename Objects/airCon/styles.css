@@ -1,5 +1,6 @@
 .container {
     width:600px;
+    justify-content: center
 }
 
 img {
