@@ -14,18 +14,18 @@ const robot = {
     },
 };
 
-function clickHi() {
-    const msg = robot.sayHi();
-    addMessage(msg);
-}
-
-function clickSmoke() {
-    const msg = robot.smoke();
-    addMessage(msg);
-}
-
 function addMessage(msg) {
     const textarea = document.getElementById('messages');
     const oldMsgs = textarea.textContent;
     textarea.textContent = `${oldMsgs}\n${msg}`;
 }
+
+const btnHi = document.getElementById('hi');
+btnHi.onclick = function () {
+    addMessage(robot.sayHi());
+};
+
+const btnSmoke = document.getElementById('smoke');
+btnSmoke.onclick = function () {
+    addMessage(robot.smoke());
+};
