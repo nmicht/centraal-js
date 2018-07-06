@@ -1,3 +1,5 @@
+'use strict';
+
 /*
 programa que calcula el total a pagar por un tipo de producto
 -pregunta el precio.
@@ -23,31 +25,31 @@ let total;
 let error = 0;
 
 do {
-  price = prompt('Type the price of the product');
-  if (isNaN(price)) {
-    console.error(price, 'is not a valid price');
-    error = error + 1;
-  }
+    price = prompt('Type the price of the product');
+    if (isNaN(price)) {
+        console.error(price, 'is not a valid price');
+        error += 1 + 1;
+    }
 } while (isNaN(price));
 
 do {
-  quantity = prompt('How many products did you buy?');
-  if (isNaN(quantity)) {
-    console.error(quantity, 'is not a valid quantity');
-    error = error + 1;
-  }
+    quantity = prompt('How many products did you buy?');
+    if (isNaN(quantity)) {
+        console.error(quantity, 'is not a valid quantity');
+        error += 1;
+    }
 } while (isNaN(quantity));
 
 
-//Convertir a números
+// Convertir a números
 
 price = Number(price);
 quantity = Number(quantity);
 
 subtotal = price * quantity;
-tax = subtotal * .16;
+tax = subtotal * 0.16;
 total = subtotal + tax;
-//Salidas
+// Salidas
 console.warn('Failed attempts', error);
 console.log('Thanks for your purchase.');
 console.log('Subtotal: $', subtotal);
