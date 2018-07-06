@@ -1,38 +1,42 @@
-function bankAccountAsk(message) {
-    let money;
-    do {
-        money = prompt(message);
-        if (isNaN(money)) {
-            console.error(money, 'That is not a valid amount');
-        }
-    } while (isNaN(money));
-    return money;
-}
+(function () {
+    'use strict';
 
-function buyPhone(phoneTotal, bankAccount) {
-    let phonesBought = 0;
-    do {
-        phonesBought += 1;
-    } while (Bank >= phoneTotal);
-    console.log(phonesBought);
-}
+    function bankAccountAsk(message) {
+        let money;
+        do {
+            money = prompt(message);
+            if (isNaN(money)) {
+                console.error(money, 'That is not a valid amount');
+            }
+        } while (isNaN(money));
+        return money;
+    }
 
-function phonePrice() {
-    let phone = 200;
-    let tax = 0.16;
-    let accessory = 30;
-    let phoneTotal;
+    function buyPhone(phoneTotal, bankAccount) {
+        let phonesBought = 0;
+        do {
+            phonesBought += 1;
+        } while (Bank >= phoneTotal);
+        console.log(phonesBought);
+    }
 
-    phoneTotal = ((phone + accessory) * (1 + tax));
+    function phonePrice() {
+        let phone = 200;
+        let tax = 0.16;
+        let accessory = 30;
+        let phoneTotal;
 
-    return totalPhonePrice;
-}
+        phoneTotal = ((phone + accessory) * (1 + tax));
 
-function printTicket() {
-    console.log('Thanks for your purchase');
-    console.log();
-}
-let bankAccount;
-let totalPhonePrice = phonePrice();
+        return totalPhonePrice;
+    }
 
-bankAccount = bankAccountAsk('How much money have you got?');
+    function printTicket() {
+        console.log('Thanks for your purchase');
+        console.log();
+    }
+    let bankAccount;
+    let totalPhonePrice = phonePrice();
+
+    bankAccount = bankAccountAsk('How much money have you got?');
+}());
