@@ -8,17 +8,22 @@
     <body>
         <form class="" action="index.html" method="post" formnovalidate>
 
-            <label for="name">Type your name <span class="required">*</span></label>
-            <input type="text" name="name" id="name" autocomplete="off" required placeholder="Juan Peréz">
+            <div class="">
+                <label for="name">Type your name <span class="required">*</span></label>
+                <input type="text" name="name" id="name" autocomplete="off" required placeholder="Juan Peréz">
+                <span class="textError">Debes ingresar tu nombre</span>
+            </div>
 
-            <label for="something">Selecciona algo <span class="required">*</span></label>
-            <select name="something" id="something">
-                <option value="0">Selecciona una opcion</option>
-                <option value="1">Opcion 1</option>
-                <option value="2">Opcion 2</option>
-                <option value="3">Opcion 3</option>
-                <option value="4">Opcion 4</option>
-            </select>
+            <div class="">
+                <label for="something">Selecciona algo <span class="required">*</span></label>
+                <select name="something" id="something">
+                    <option value="0">Selecciona una opcion</option>
+                    <option value="1">Opcion 1</option>
+                    <option value="2">Opcion 2</option>
+                    <option value="3">Opcion 3</option>
+                    <option value="4">Opcion 4</option>
+                </select>
+            </div>
 
             <fieldset>
                 <legend>Selecciona el horario <span class="required">*</span></legend>
@@ -30,11 +35,15 @@
                 <label for="time-n">Noche</label>
             </fieldset>
 
-            <label for="age">Edad</label>
-            <input type="number" name="age" id="age">
+            <div class="">
+                <label for="age">Edad</label>
+                <input type="number" name="age" id="age">
+            </div>
 
-            <label for="comments">Comentarios <span class="required">*</span></label>
-            <textarea name="comments" id="comments"></textarea>
+            <div class="">
+                <label for="comments">Comentarios <span class="required">*</span></label>
+                <textarea name="comments" id="comments"></textarea>
+            </div>
 
             <button type="button" id="submit">Enviar</button>
 
