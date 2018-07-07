@@ -34,7 +34,7 @@ submit.addEventListener('click', function () {
 
 const textarea = document.getElementById('comments');
 textarea.addEventListener('blur', function () {
-    if (textarea.textContent == false) {
+    if (textarea.value == false) {
         this.className = 'error';
     }
 })
