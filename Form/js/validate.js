@@ -1,11 +1,12 @@
 let inputName = document.getElementById('name');
 inputName.addEventListener('blur', function () {
+    this.className = '';
     if (this.value == false) {
         this.className = 'error';
     }
 });
 inputName.addEventListener('focus', function () {
-    this.className = '';
+    this.className = 'focus';
 });
 
 const something = document.getElementById('something');
