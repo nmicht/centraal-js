@@ -11,9 +11,13 @@ inputName.addEventListener('focus', function () {
 
 const something = document.getElementById('something');
 something.addEventListener('blur', function () {
+    this.className = '';
     if (this.value == 0) {
         this.className = 'error';
     }
+});
+something.addEventListener('focus', function () {
+    this.className = 'focus';
 });
 
 const ageInput = document.getElementById('age');
