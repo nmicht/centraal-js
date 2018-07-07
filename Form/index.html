@@ -6,10 +6,37 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <form class="" action="index.html" method="post">
+        <form class="" action="index.html" method="post" formnovalidate>
 
-            <label for="cosa">Cosa</label>
-            <input type="text" name="cosa" id="cosa">
+            <label for="name">Type your name <span class="required">*</span></label>
+            <input type="text" name="name" id="name" autocomplete="off" required placeholder="Juan Peréz">
+
+            <label for="something">Selecciona algo <span class="required">*</span></label>
+            <select name="something" id="something">
+                <option value="0">Selecciona una opcion</option>
+                <option value="1">Opcion 1</option>
+                <option value="2">Opcion 2</option>
+                <option value="3">Opcion 3</option>
+                <option value="4">Opcion 4</option>
+            </select>
+
+            <fieldset>
+                <legend>Selecciona el horario <span class="required">*</span></legend>
+                <input type="checkbox" name="asd" value="a" id="time-m">
+                <label for="time-m">Mañana</label>
+                <input type="checkbox" name="asd" value="b" id="time-t">
+                <label for="time-t">Tarde</label>
+                <input type="checkbox" name="asd" value="c" id="time-n">
+                <label for="time-n">Noche</label>
+            </fieldset>
+
+            <label for="age">Edad</label>
+            <input type="number" name="age" id="age">
+
+.           <label for="comments">Comentarios <span class="required">*</span></label>
+            <textarea name="comments" id="comments"></textarea>
+
+            <button type="button" id="submit">Enviar</button>
 
         </form>
 

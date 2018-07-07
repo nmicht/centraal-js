@@ -1,11 +1,25 @@
+form {
+    width: 600px;
+    margin: 0 auto;
+}
+input,
+textarea,
+button,
+select {
+    display: block;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    display: inline;
+}
 
 .focus {
     border: 2px solid green;
 }
 .error {
-    color: brown;
     border: 2px solid red;
 }
-.blur {
-    border: 2px solid red;
+.required {
+    color: red;
+    font-weight: bold;
 }
