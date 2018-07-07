@@ -1,3 +1,11 @@
+
 .focus {
     border: 2px solid green;
+}
+.error {
+    color: brown;
+    border: 2px solid red;
+}
+.blur {
+    border: 2px solid red;
 }
