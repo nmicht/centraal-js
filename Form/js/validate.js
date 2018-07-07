@@ -1,8 +1,11 @@
-const inputName = document.getElementById('name');
+let inputName = document.getElementById('name');
 inputName.addEventListener('blur', function () {
     if (this.value == false) {
         this.className = 'error';
     }
+});
+inputName.addEventListener('focus', function () {
+    this.className = '';
 });
 
 const something = document.getElementById('something');
