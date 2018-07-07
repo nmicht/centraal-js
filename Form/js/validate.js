@@ -17,9 +17,13 @@ something.addEventListener('blur', function () {
 
 const ageInput = document.getElementById('age');
 ageInput.addEventListener('blur', function () {
+    this.className = '';
     if (this.value < 18) {
         this.className = 'error';
     }
+});
+ageInput.addEventListener('focus', function(){
+    this.className = 'focus';
 });
 
 const submit = document.getElementById('submit');
