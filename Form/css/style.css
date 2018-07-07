@@ -34,3 +34,7 @@ input[type="radio"] {
     color: red;
     font-weight: bold;
 }
+.textError {
+    font-style: italic;
+    color: red;
+}

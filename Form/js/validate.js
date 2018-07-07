@@ -2,6 +2,11 @@ let inputName = document.getElementById('name');
 inputName.addEventListener('blur', function () {
     this.className = '';
     if (this.value == false) {
+        let spanTag = document.createElement('span');
+        let content = document.createTextNode('Type a name');
+        spanTag.appendChild(content);
+        spanTag.className = 'textError';
+        this.parentNode.appendChild(spanTag);
         this.className = 'error';
     }
 });
