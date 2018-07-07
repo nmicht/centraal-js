@@ -1,0 +1,10 @@
+.focus {
+    border: 2px solid green;
+}
+.error {
+    border: 2px solid red;
+}
+.required {
+    color: red;
+    font-weight: bold;
+}
