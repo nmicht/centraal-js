@@ -2,12 +2,13 @@ let inputName = document.getElementById('name');
 inputName.addEventListener('blur', function () {
     this.className = '';
     if (this.value == false) {
+        this.className = 'error';
+
         let spanTag = document.createElement('span');
         let content = document.createTextNode('Type a name');
         spanTag.appendChild(content);
         spanTag.className = 'textError';
         this.parentNode.appendChild(spanTag);
-        this.className = 'error';
     }
 });
 inputName.addEventListener('focus', function () {
@@ -28,11 +29,6 @@ let spanTag = document.createElement('span');
 let content = document.createTextNode('Te equivocas')
 spanTag.appendChild(content);
 "Te equivocas"
-spanTag
-    <span>Te equivocas</span>
-document.body.appendChild(spanTag)
-    <span>Te equivocas</span>
-ageInput
 
 const ageInput = document.getElementById('age');
 ageInput.addEventListener('blur', function () {
