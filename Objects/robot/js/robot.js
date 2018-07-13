@@ -1,31 +1,15 @@
-const robot = {
-    name: 'Bender',
-
-    sayHi: function (name = '') {
-        return `Hi I'm ${this.name}. Go fuck yourself ${name}`;
-    },
-
-    drink: function () {
-        return 'I\'m drinking, ahhh';
-    },
-
-    smoke: function () {
-        return 'smoooooooooking';
-    },
+const Robot = function (name, color = 'black') {
+    this.name = name;
+    this.color = color;
 };
 
-function addMessage(msg) {
-    const textarea = document.getElementById('messages');
-    const oldMsgs = textarea.textContent;
-    textarea.textContent = `${oldMsgs}\n${msg}`;
-}
-
-const btnHi = document.getElementById('hi');
-btnHi.onclick = function () {
-    addMessage(robot.sayHi());
+Robot.prototype.sayHi = function (name = '') {
+    return `Hi I'm ${this.name}. Go fuck yourself ${name}`;
 };
-
-const btnSmoke = document.getElementById('smoke');
-btnSmoke.onclick = function () {
-    addMessage(robot.smoke());
+Robot.prototype.drink = function () {
+    return 'I\'m drinking, ahhh';
 };
+Robot.prototype.smoke = function () {
+    return 'smoooooooooking';
+};
+Robot.prototype.lang = 'en';
