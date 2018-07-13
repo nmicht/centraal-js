@@ -1,4 +1,4 @@
-const voit = new ball('white', 'voit');
+const voit = new ball('voit', 'White');
 
 
 function hiClicked() {
