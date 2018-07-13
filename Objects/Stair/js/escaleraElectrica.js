@@ -1,55 +1,22 @@
 'use strict';
 
-const stair = {
-    name: 'Stair of the future',
-    numberStairs: '35',
-    sayHi: function sayHi(name = '') {
-        return `Greetings ${name} I'm the ${this.name}`;
-    },
-    getUp: function getUp(name = '') {
-        return `let´s go to the top ${name}`;
-    },
-    goDown: function goDown() {
-        return `let´s go to the bottom ${name}`;
-    },
-    stop: function stop() {
-        return `let´s take a break ${name}`;
-    },
-    powerDown: function powerDown() {
-        return 'You tried to stop the future, you can´t stop the future';
-    },
-    bye: function bye(friendo) {
-        console.log('bye ', friendo);
-    },
+const Stair = function (name, steps) {
+    this.name = name;
+    this.steps = steps;
 };
 
-const btnHi = document.getElementById('buttonHi');
-btnHi.onclick = function () {
-    addMessage(stair.sayHi());
+Stair.prototype.sayHi = function (name = '') {
+    return `Greetings ${name} I'm the ${this.name}`;
 };
-
-const btnUp = document.getElementById('buttonUp');
-btnUp.onclick = function () {
-    addMessage(stair.getUp());
+Stair.prototype.getUp = function getUp(name = '') {
+    return `let´s go to the top ${name}`;
 };
-
-const btnDown = document.getElementById('buttonDown');
-btnDown.onclick = function () {
-    addMessage(stair.goDown());
+Stair.prototype.goDown = function goDown(name = '') {
+    return `let´s go to the bottom ${name}`;
 };
-
-const btnStop = document.getElementById('buttonPowerDown');
-btnStop.onclick = function () {
-    addMessage(stair.stop());
+Stair.prototype.stop = function stop(name = '') {
+    return `let´s take a break ${name}`;
 };
-
-const btnPowerDown = document.getElementById('buttonShutDown');
-btnPowerDown.onclick = function () {
-    addMessage(stair.powerDown());
+Stair.prototype.powerDown = function () {
+    return 'You tried to stop the future, you can´t stop the future';
 };
-
-function addMessage(msg) {
-    const box = document.getElementById('messages');
-    const oldBox = box.textContent;
-    box.textContent = `${oldBox}\n${msg}`;
-}
