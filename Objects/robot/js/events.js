@@ -16,3 +16,19 @@ const btnSmoke = document.getElementById('smoke');
 btnSmoke.onclick = function () {
     addMessage(bender.smoke());
 };
+
+// Select the Robot
+const options = document.getElementsByTagName('img');
+for (img of options) {
+    img.onclick = function (e) {
+        e = e || window.event;
+        let img = e.target || e.srcElement;
+        img.classList.toggle('remark');
+        let imgs = img.parentNode.childNodes;
+        imgs.forEach(function(node){
+            if(node != img && node.nodeType == 1) {
+                node.classList.remove('remark');
+            }
+        });
+    };
+}
