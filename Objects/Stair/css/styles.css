@@ -1,13 +1,20 @@
+.buttonbox {
+    width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+.imgBox {
+    text-align: center;
+}
+.imgBox img {
+    display: inline-block;
+}
 textarea {
-    width: 50%;
+    display: block;
+    width: 100%;
+    margin-top: 40px;
     height: 150px;
 }
-img {
-    display: block;
-}
 .selected {
-    width: 500px
-}
-.ignored {
-    width: 200px;s
+    width: 500px;
 }

@@ -31,3 +31,18 @@ const btnPowerDown = document.getElementById('buttonShutDown');
 btnPowerDown.onclick = function () {
     addMessage(StairOfTheFurture.powerDown());
 };
+
+const options = document.getElementsByTagName('img');
+for (img of options) {
+    img.onclick = function (e) {
+        e = e || window.event;
+        let img = e.target || e.srcElement;
+        img.classList.toggle('selected');
+        let imgs = img.parentNode.childNodes;
+        imgs.forEach(function(node){
+            if(node != img && node.nodeType == 1) {
+                node.classList.remove('selected');
+            }
+        });
+    };
+}
